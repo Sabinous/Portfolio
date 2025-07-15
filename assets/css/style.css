@@ -4,7 +4,7 @@
     --bg-color: #111111;
     --primary-text-color: #F5F5F5;
     --secondary-text-color: #A3A3A3;
-    --accent-color: #3b82f6; /* Azul vibrante */
+    --accent-color: #3b82f6;
     --card-color: #1C1C1C;
     --border-color: #2D2D2D;
 }
@@ -77,7 +77,7 @@ section {
     padding: 6rem 0;
 }
 
-/* === SEÇÃO HOME COM IMAGEM (ESTILOS CORRIGIDOS) === */
+
 #home {
     min-height: 90vh;
     display: flex;
@@ -125,15 +125,15 @@ section {
 }
 
 .home-image {
-    flex-basis: 320px; /* Tamanho base da coluna da imagem */
+    flex-basis: 320px;
     flex-shrink: 0;
 }
 
 .home-image img {
-    width: 100%; /* Ocupa 100% da sua coluna (320px) */
-    height: auto; /* Altura automática para não distorcer */
-    border-radius: 12px; /* Cantos arredondados */
-    border: 2px solid var(--border-color); /* Borda sutil */
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
 }
 
 /* OUTRAS SEÇÕES */
@@ -181,10 +181,10 @@ section {
 
 footer { padding: 4rem 0; text-align: center; color: var(--secondary-text-color); border-top: 1px solid var(--border-color); }
 
-/* AJUSTES PARA CELULAR */
+
 @media (max-width: 992px) {
     .home-container {
-        flex-direction: column-reverse; /* Inverte a ordem: imagem em cima, texto embaixo */
+        flex-direction: column-reverse;
         text-align: center;
         gap: 3rem;
     }
@@ -194,12 +194,44 @@ footer { padding: 4rem 0; text-align: center; color: var(--secondary-text-color)
     }
 
     .home-image {
-        flex-basis: auto; /* Remove a base fixa */
-        width: 80%; /* Ocupa 80% da tela */
-        max-width: 280px; /* Define um tamanho máximo */
+        flex-basis: auto;
+        width: 80%;
+        max-width: 280px;
     }
 
     .social-links {
         justify-content: center;
+    }
+}
+
+.cv-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cv-button:hover {
+    transform: translateY(-3px);
+    background-color: #2563eb;
+    color: var(--primary-text-color);
+}
+
+.cv-button i {
+    margin-left: 8px;
+}
+
+
+@media (max-width: 992px) {
+    .cv-button {
+        margin-left: 0;
+        margin-top: 2rem;
+        width: 80%;
+        max-width: 250px;
     }
 }
