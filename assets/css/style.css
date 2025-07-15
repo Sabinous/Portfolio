@@ -207,7 +207,7 @@ footer { padding: 4rem 0; text-align: center; color: var(--secondary-text-color)
 .cv-button {
     display: inline-block;
     background-color: var(--accent-color);
-    color: var(--primary-text-color);
+    color: #FFFFFF;
     padding: 10px 20px;
     border-radius: 8px;
     font-weight: 500;
